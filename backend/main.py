@@ -9,7 +9,8 @@ app = FastAPI()
 # Allows frontend to speak to backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # replace with frontend and backend URL's for deployment
+    allow_origins=["https://malicious-url-detector-web-app-6s0c.onrender.com"],
+      # replace with frontend  URL's for deployment
 )
 
 # Load embedding model
@@ -25,6 +26,7 @@ class URLRequest(BaseModel):
 def root():
     return{"status":"online"}
 
+# Route to get prediction from random forest model (benign or malicious)
 @app.post("/predict")
 def predict(request: URLRequest):
     embedding = embedding_model.encode([request.url])  # string to num vector
