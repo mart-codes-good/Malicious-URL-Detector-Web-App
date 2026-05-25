@@ -5,10 +5,14 @@ A simple web app built with FastApi and a ML model I trained on a dataset with b
 ```
 Python
 Fast Api
-
+Joblib
 
 ```
 
+## System Design
+Backend -> -> Frontend
+
 ## Contributors 
-* Mart-codes-good | Backend, initial frontend and ML model
-* zcxu-4444 & Ahnaf-Reaz | UI Design, development and implementation
+* Mart-codes-good - Fullstack and ML model
+* Ahnaf-Reaz - UI Design & Frontend implementation
+* zcxu-4444 - UI Design, & Product Managment
