@@ -14,7 +14,7 @@ app.add_middleware(
 )
 
 # Load embedding model
-embedding_model = SentenceTransformer('BAAI/bge-small-en-v1.5')
+embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Load random forest classifer model at startup
 classifier = joblib.load("url_model_1.pkl")
