@@ -1,5 +1,4 @@
 fastapi==0.136.3
 joblib==1.5.3
 pydantic==2.13.4
-sentence_transformers==5.5.1
 uvicorn

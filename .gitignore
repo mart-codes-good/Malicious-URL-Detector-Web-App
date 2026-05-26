@@ -1,6 +1,9 @@
 # Avoid pushing .venv
 .venv/
 
+# env file ignore it
+.env
+
 # Ignore Python cache files 
 __pycache__/
 *.pyc

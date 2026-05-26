@@ -8,7 +8,7 @@ async function checkURL(){
 
     resultDiv.textContent = "Predicting..";
     
-    const response = await fetch("http://127.0.0.1:8000/predict", {
+    const response = await fetch("https://malicious-url-detector-web-app-6s0c.onrender.com/predict", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({url: url})
