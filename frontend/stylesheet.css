@@ -1,0 +1,36 @@
+html{
+    background: #A48379;
+    font-family: "Space Grotesk", sans-serif;
+
+}
+
+h1{
+    color: #332623;
+}
+
+h2{
+    color: #332623;
+}
+
+body{
+    max-width: 500px; 
+    margin: 50px auto; 
+    padding: 20px;
+    color: #332623;
+}
+
+input { 
+    font-family: "Space Grotesk", sans-serif;
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    box-sizing: border-box; 
+}
+
+button { 
+    font-family: "Space Grotesk", sans-serif;
+    padding: 10px 20px; 
+    background: #332623;
+    color: white;
+    border: none; 
+}

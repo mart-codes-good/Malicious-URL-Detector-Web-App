@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Malicious URL Detector</title>
-    <style>
-      body { font-family: sans-serif; max-width: 500px; margin: 50px auto; padding: 20px; }
-      input { width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box; }
-      button { padding: 10px 20px; background: #007bff; color: white; border: none; }
-    </style>
+    <title>MUD</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link href="stylesheet.css" rel="stylesheet">
+
   </head>
 
   <body>  
     <!-- Title and stuff -->
-    <h2>Malicious URL Detector</h1>
-    <p>Enter a URL to check if it is Malicious or not.</p>
-    <p>Please note that all detections are predictions made by a trained random forest model and not official diagnosis. </p>
+    <h1>MUD: Malicious URL Detector</h1>
+    <h2>Throw a suspicious URL link into the MUD to check if it is malicious or not.</h2>
+    <p>Please note that all detections are <b>not an official diagnosis</b>, predictions made by a trained random forest model. </p>
     
     <!-- User Input -->
     <input type="text" id="urlInput" placeholder="https://example.com">
