@@ -6,7 +6,7 @@ async function checkURL(){
     if(!url)
         return;
 
-    resultDiv.textContent = "Predicting..";
+    resultDiv.textContent = "Predicting...";
     
     const response = await fetch("https://malicious-url-detector-web-app.onrender.com/predict", {
         method: "POST",
@@ -15,7 +15,7 @@ async function checkURL(){
     });
 
     const data = await response.json();
-    console.log("Model predicted: " + data.prediction); // "benign or malicious"
+    console.log("Model predicts that the URL is: " + data.prediction); // "benign or malicious"
 
     resultDiv.className = data.prediction;
     resultDiv.textContent = `Result: ${data.prediction.toUpperCase()}`;
